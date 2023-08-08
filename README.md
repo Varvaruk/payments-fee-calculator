@@ -2,8 +2,7 @@
 
 This project is a Payments Fee Calculator that helps calculate commissions based on various user types, operation types, and currency exchange rates.
 
-
-## Local Usage
+### Local Usage
 
 1. Download the project and install dependencies using Composer:
 
@@ -11,15 +10,19 @@ This project is a Payments Fee Calculator that helps calculate commissions based
    composer install
    ```
 
-2. To run the script locally, navigate to the `/bin` directory and execute:
+2. Rename the `.env.example` file to `.env`.
+
+3. Open the `.env` file and set the correct value for the `CURRENCY_API_ENDPOINT` variable to specify the API endpoint for currency exchange rates.
+
+4. To run the script locally, navigate to the `/bin` directory and execute:
 
    ```bash
    php script.php input.csv
    ```
 
-3. You can modify the `input.csv` file by placing it in the `/bin/data` directory.
+5. You can modify the `input.csv` file by placing it in the `/bin/data` directory.
 
-## Usage via Composer
+### Usage via Composer
 
 1. Execute available scripts using Composer from the project root:
 
