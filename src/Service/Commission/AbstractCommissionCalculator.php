@@ -36,7 +36,6 @@ abstract class AbstractCommissionCalculator implements CommissionCalculatorInter
      */
     private const WITHDRAW_OPERATION_TYPE = 'withdraw';
 
-
     /**
      * @param string $operationDate
      * @param int $userId
