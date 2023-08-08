@@ -10,7 +10,7 @@ interface CurrencyConverterInterface
      * @param array $exchangeRates An associative array of exchange rates,
      *                            where keys are source currencies and values are arrays
      *                            of target currencies with their rates.
-     *                            Example: ['EUR' => ['USD' => 1.1497, 'JPY' => 129.53]]
+     *                            Example: ['base' => 'EUR','date' => '2023-08-07','rates' => ['AED' => 4.147043,]
      */
     public function setExchangeRates(array $exchangeRates): void;
 

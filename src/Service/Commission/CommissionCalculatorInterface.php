@@ -2,6 +2,10 @@
 
 namespace Varvaruk\PaymentsFeeCalculator\Service\Commission;
 
+/**
+ * Interface CommissionCalculatorInterface
+ * @package Varvaruk\PaymentsFeeCalculator\Service\Commission
+ */
 interface CommissionCalculatorInterface
 {
     /**

@@ -2,21 +2,32 @@
 
 namespace Varvaruk\PaymentsFeeCalculator\Service;
 
-use Exception;
 use RuntimeException;
 use Varvaruk\PaymentsFeeCalculator\Service\Commission\CommissionCalculatorFactory;
 
+/**
+ * Class CSVProcessor
+ * @package Varvaruk\PaymentsFeeCalculator\Service
+ */
 class CSVProcessor
 {
+    /**
+     * @var CommissionCalculatorFactory
+     */
     private CommissionCalculatorFactory $calculatorFactory;
 
+    /**
+     * CSVProcessor constructor.
+     * @param CommissionCalculatorFactory $calculatorFactory
+     */
     public function __construct(CommissionCalculatorFactory $calculatorFactory)
     {
         $this->calculatorFactory = $calculatorFactory;
     }
 
     /**
-     * @throws Exception
+     * @param string $csvFilePath
+     * @return array
      */
     public function processCSV(string $csvFilePath): array
     {

@@ -2,8 +2,16 @@
 
 namespace Varvaruk\PaymentsFeeCalculator\Service\Commission;
 
+/**
+ * Class CommissionCalculatorFactory
+ * @package Varvaruk\PaymentsFeeCalculator\Service\Commission
+ */
 class CommissionCalculatorFactory
 {
+    /**
+     * @param string $clientType
+     * @return CommissionCalculatorInterface
+     */
     public function getCalculator(string $clientType): CommissionCalculatorInterface
     {
         return match ($clientType) {
