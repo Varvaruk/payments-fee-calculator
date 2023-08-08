@@ -65,8 +65,7 @@ abstract class AbstractCommissionCalculator implements CommissionCalculatorInter
         float $operationAmount,
         string $operationCurrency,
         string $operationType
-    ): string|int|float
-    {
+    ): string|int|float {
         return match ($operationType) {
             self::DEPOSIT_OPERATION_TYPE => $this->calculateDepositCommission($operationAmount, $operationCurrency),
             self::WITHDRAW_OPERATION_TYPE => $this->calculateWithdrawCommission(

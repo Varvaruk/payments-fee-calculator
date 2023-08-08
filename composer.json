@@ -25,8 +25,9 @@
         "sort-packages": true
     },
     "scripts": {
-        "check-style": "phpcs --standard=PSR12 src/",
         "autoload": "composer dump-autoload",
+        "fix-style": "vendor/bin/phpcbf --standard=PSR12 src/\n",
+        "check-style": "phpcs --standard=PSR12 src/",
         "phpunit": "phpunit",
         "fix-cs": "php-cs-fixer fix",
         "test-cs": "php-cs-fixer fix --dry-run -v",
